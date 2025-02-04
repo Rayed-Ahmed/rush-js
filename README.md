@@ -1,6 +1,6 @@
-Rush.js
+rushxx
 
-Rush.js is a lightweight, minimalistic Node.js framework for handling HTTP requests with middleware support. It provides a simple API for defining routes, using middleware, and handling errors.
+rushxx is a lightweight, minimalistic Node.js framework for handling HTTP requests with middleware support. It provides a simple API for defining routes, using middleware, and handling errors.
 
 Features
 
@@ -14,7 +14,7 @@ JSON response handling
 
 Installation
 
-Clone this repository and include Rush.js in your project:
+Clone this repository and include rushxx in your project:
 
 npm install
 
@@ -22,7 +22,7 @@ Usage
 
 Creating a Server
 
-const Rush = require("Rush");
+const Rush = require("rushxx");
 const app = new Rush();
 
 app.listen(3000, () => {

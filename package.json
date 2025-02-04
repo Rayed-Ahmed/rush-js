@@ -1,17 +1,26 @@
 {
-  "name": "rush-js",
+  "name": "rushxx",
   "version": "1.0.0",
   "description": "A lightweight, minimalistic Node.js framework for handling HTTP requests with middleware support.",
-  "main": "Rush.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["node", "framework", "http", "middleware", "rush"],
+  "keywords": [
+    "node",
+    "framework",
+    "http",
+    "middleware",
+    "rush"
+  ],
   "author": "Rayed Ahmed",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Rayed-Ahmed/rush-js"
+    "url": "git+https://github.com/Rayed-Ahmed/rush-js.git"
   },
-  "dependencies": {}
+  "bugs": {
+    "url": "https://github.com/Rayed-Ahmed/rush-js/issues"
+  },
+  "homepage": "https://github.com/Rayed-Ahmed/rush-js#readme"
 }
