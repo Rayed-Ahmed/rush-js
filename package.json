@@ -1,6 +1,6 @@
 {
   "name": "rushxx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight, minimalistic Node.js framework for handling HTTP requests with middleware support.",
   "main": "index.js",
   "scripts": {

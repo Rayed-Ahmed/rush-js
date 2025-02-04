@@ -16,7 +16,7 @@ Installation
 
 Clone this repository and include rushxx in your project:
 
-npm install
+npm install rushxx
 
 Usage
 
