@@ -1,85 +1,95 @@
-rushxx
+# rushxx
 
-rushxx is a lightweight, minimalistic Node.js framework for handling HTTP requests with middleware support. It provides a simple API for defining routes, using middleware, and handling errors.
+**rushxx** is a lightweight, minimalistic Node.js framework for handling HTTP requests with middleware support. It provides a simple API for defining routes, using middleware, and handling errors.
 
-Features
+## Features
 
-Minimal and lightweight HTTP framework
+- Minimal and lightweight HTTP framework
 
-Middleware support
+- Middleware support
 
-Custom error handling
+- Custom error handling
 
-JSON response handling
+- JSON response handling
 
-Installation
+## Installation
 
-Clone this repository and include rushxx in your project:
+Clone this repository and include rushxx in your project:[https://github.com/Rayed-Ahmed/rushxx], or
 
-npm install rushxx
+```sh
+npm install rushxx // Install rushxx with npm
+```
 
-Usage
+## Usage
 
-Creating a Server
+### Creating a Server
 
+```sh
 const Rush = require("rushxx");
 const app = new Rush();
 
 app.listen(3000, () => {
 console.log("Server running on port 3000");
 });
+```
 
-Defining Routes
+### Defining Routes
 
+```sh
 app.route("get", "/", (req, res) => {
 res.json({ message: "Hello, world!" });
 });
+```
 
-Using Middleware
+### Using Middleware
 
+```sh
 app.use((req, res, next) => {
 console.log(`Incoming request: ${req.method} ${req.url}`);
 next();
 });
+```
 
-Handling Errors
+### Handling Errors
 
+```sh
 app.handleError((req, res, error) => {
 res.status(500).json({ error: error.message || "Internal Server Error" });
 });
+```
 
-API
+## API
 
-app.route(method, url, callback)
+### `app.route(method, url, callback)`
 
 Registers a route with the given HTTP method and URL.
 
-method (string) - HTTP method (e.g., "get", "post")
+- **method** _(string)_ - HTTP method (e.g., "get", "post")
 
-url (string) - Route URL
+- **url** _(string)_ - Route URL
 
-callback (function) - Function with (req, res, next) parameters
+- **callback** _(function)_ - Function with (req, res, next) parameters
 
-app.use(callback)
+### `app.use(callback)`
 
 Adds a middleware function to be executed before the request reaches the route handler.
 
-callback (function) - Function with (req, res, next) parameters
+- **callback** _(function)_ - Function with (req, res, next) parameters
 
-app.handleError(callback)
+### `app.handleError(callback)`
 
 Sets a global error handler for requests.
 
-callback (function) - Function with (req, res, error) parameters
+- **callback** (function) - Function with (req, res, error) parameters
 
-app.listen(port, callback)
+### `app.listen(port, callback)`
 
 Starts the server on the specified port.
 
-port (number) - Port number to listen on
+- **port** _(number)_ - Port number to listen on
 
-callback (function) - Function executed once the server starts
+- **callback** _(function)_ - Function executed once the server starts
 
-Contributing
+## Contributing
 
-Feel free to fork this repository and contribute! Pull requests are welcome.
+Feel free to fork this repository [https://github.com/Rayed-Ahmed/rushxx] and contribute! Pull requests are welcome.

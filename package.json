@@ -1,8 +1,8 @@
 {
   "name": "rushxx",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight, minimalistic Node.js framework for handling HTTP requests with middleware support.",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
