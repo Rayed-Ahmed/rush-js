@@ -11,7 +11,7 @@
     "framework",
     "http",
     "middleware",
-    "rush"
+    "rushxx"
   ],
   "author": "Rayed Ahmed",
   "license": "ISC",
